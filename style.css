@@ -1,0 +1,106 @@
+/*全体*/
+body {
+    background-color: #CCEFFF;
+}
+
+.top-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*計算機全体*/
+.warikan {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+/*横線*/
+hr {
+    margin-top: 18px;
+}
+/*入力フォーム*/
+.input-form {
+    text-align: center;
+}
+.input-form h2{
+    font-size: 27px;
+}
+
+/*消去ボタン*/
+.delete {
+    margin-top: 20px;
+}
+
+/*通常の支払額*/
+.normal-show-money {
+    text-align: center;
+}
+/*一人当たり*/
+.normal-show-money .one-payment h2{
+    font-size: 20px;
+}
+.amount-display {
+    font-size: 15px;
+}
+/*誤差*/
+.error-display{
+    font-size: 15px;
+}
+/*代表者*/
+.rep-payment h2{
+    font-size: 20px;
+}
+.rep-amount-display {
+    font-size: 15px;
+}
+/*計算式*/
+.money-formula h2{
+    font-size: 25px;
+}
+/*小銭切り捨てを表示*/
+.show-coin {
+    margin-top: 20px;
+}
+.show-coin h2{
+    font-size: 20px;
+}
+
+
+
+/*小銭切り捨て*/
+.cut-coin-show{
+    text-align: center;
+}
+/*タイトル*/
+.cut-coin-title h2{
+    font-size: 20px;
+}
+/*一人当たり*/
+.cut-one-amount h2{
+    font-size: 20px;
+}
+.cut-amount-display {
+    font-size: 15px;
+}
+/*誤差*/
+.cut-error-display{
+    font-size: 15px;
+}
+/*代表者*/
+.cut-rep-payment h2{
+    font-size: 20px;
+}
+.cut-rep-amount-display {
+    font-size: 15px;
+}
+/*計算式*/
+.cut-money-formula h2{
+    font-size: 25px;
+}
+/*閉じるボタン*/
+.close-button {
+    margin-top: 30px;
+}

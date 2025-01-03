@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>割り勘計算機</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="top-title">
+        <h1>割り勘計算機</h1>
+    </div>
+
+    <div class="warikan">
+
+        <div class="input-form">
+
+            <div class="money-form">
+                <h2>総支払金額</h2>
+                <input type="number" id="amount" placeholder="金額を入力してください">
+            </div>
+            <div class="member-form">
+                <h2>人数</h2>
+                <input type="number" id="member" placeholder="人数を入力してください">
+            </div>
+            <div class="delete">
+                <button onClick="deleteinput()">消去</button>
+                <hr>
+            </div>
+
+        </div>
+
+        <div class="normal-show-money">
+
+            <div class="one-payment">
+                <h2>一人当たりの支払金額</h2>
+                <div id="amount-display" class="amount-display">
+                    ※金額はここに表示されます
+                </div>
+            </div>
+            <div class="money-error">
+                <h2>誤差</h2>
+                <div id="error-display" class="error-display">
+                    ※誤差はここに表示されます
+                </div>
+            </div>
+            <div class="rep-payment">
+                <h2>代表者一人の支払金額<br>（誤差の調整）</h2>
+                <div id="rep-amount-display" class="rep-amount-display">
+                    ※金額はここに表示されます
+                </div>
+            </div>
+            <div class="money-formula">
+                <h2>計算式</h2>
+                <div id="money-formula-display" class="money-formula-display">
+                    ※式はここに表示されます
+                </div>
+            </div>
+            <div class="show-coin">
+                <hr>
+                <div id="show-coin" style="display: block;">
+                    <h2>小銭（１０円以下）を<br>省略した場合</br></h2>
+                    <button onClick="showcutcoin()">表示</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cut-coin-show">
+
+            <div id="cut-coin-show" style="display: none;">
+                <div class="cut-coin-title">
+                    <h2>小銭（１０円以下）を<br>省略した場合</h2>
+                </div>
+                <div class="cut-one-amount">
+                    <h2>一人当たりの支払金額</h2>
+                    <div id="cut-amount-display" class="cut-amount-display">
+                        ※金額はここに表示されます
+                    </div>
+                </div>
+                <div class="cut-money-error">
+                    <h2>誤差</h2>
+                    <div id="cut-error-display" class="cut-error-display">
+                        ※誤差はここに表示されます
+                    </div>
+                </div>
+                <div class="cut-rep-payment">
+                    <h2>代表者一人の支払金額<br>（誤差の調整）</h2>
+                    <div id="cut-rep-amount-display" class="cut-rep-amount-display">
+                        ※金額はここに表示されます
+                    </div>
+                </div>
+                <div class="cut-money-formula">
+                    <h2>計算式</h2>
+                    <div id="cut-money-formula-display" class="cut-money-formula-display">
+                        ※計算式はここに表示されます
+                    </div>
+                </div>
+                <div class="close-button">
+                    <div id="close-button" style="display: none;">
+                        <button onClick="cutcoinclose()">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
